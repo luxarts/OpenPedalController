@@ -1,0 +1,158 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM7805_TO220 U?
+U 1 1 5E1B65AC
+P 2350 1550
+F 0 "U?" H 2350 1792 50  0000 C CNN
+F 1 "LM7805_TO220" H 2350 1701 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2350 1775 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 2350 1500 50  0001 C CNN
+	1    2350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E1B6E3C
+P 3100 1750
+F 0 "C?" H 3215 1796 50  0000 L CNN
+F 1 "100nF" H 3215 1705 50  0000 L CNN
+F 2 "" H 3138 1600 50  0001 C CNN
+F 3 "~" H 3100 1750 50  0001 C CNN
+	1    3100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4003 D?
+U 1 1 5E1B74EE
+P 1550 1550
+F 0 "D?" H 1550 1766 50  0000 C CNN
+F 1 "1N4003" H 1550 1675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1550 1375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1550 1550 50  0001 C CNN
+	1    1550 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5E1B7E40
+P 1800 1750
+F 0 "C?" H 1915 1796 50  0000 L CNN
+F 1 "470uF" H 1915 1705 50  0000 L CNN
+F 2 "" H 1800 1750 50  0001 C CNN
+F 3 "~" H 1800 1750 50  0001 C CNN
+	1    1800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_MountingPin J?
+U 1 1 5E1B8515
+P 1000 1450
+F 0 "J?" H 1057 1767 50  0000 C CNN
+F 1 "Barrel_Jack_MountingPin" H 1057 1676 50  0000 C CNN
+F 2 "" H 1050 1410 50  0001 C CNN
+F 3 "~" H 1050 1410 50  0001 C CNN
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5E1BE4A1
+P 2700 1750
+F 0 "C?" H 2815 1796 50  0000 L CNN
+F 1 "10uF" H 2815 1705 50  0000 L CNN
+F 2 "" H 2700 1750 50  0001 C CNN
+F 3 "~" H 2700 1750 50  0001 C CNN
+	1    2700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1BF05D
+P 2350 2000
+F 0 "#PWR?" H 2350 1750 50  0001 C CNN
+F 1 "GND" H 2355 1827 50  0000 C CNN
+F 2 "" H 2350 2000 50  0001 C CNN
+F 3 "" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E1BF835
+P 3100 1500
+F 0 "#PWR?" H 3100 1350 50  0001 C CNN
+F 1 "+5V" H 3115 1673 50  0000 C CNN
+F 2 "" H 3100 1500 50  0001 C CNN
+F 3 "" H 3100 1500 50  0001 C CNN
+	1    3100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1BFFDC
+P 1350 1750
+F 0 "#PWR?" H 1350 1500 50  0001 C CNN
+F 1 "GND" H 1355 1577 50  0000 C CNN
+F 2 "" H 1350 1750 50  0001 C CNN
+F 3 "" H 1350 1750 50  0001 C CNN
+	1    1350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1550 1400 1550
+Wire Wire Line
+	1350 1750 1350 1350
+Wire Wire Line
+	1350 1350 1300 1350
+Wire Wire Line
+	1700 1550 1800 1550
+Wire Wire Line
+	1800 1600 1800 1550
+Connection ~ 1800 1550
+Wire Wire Line
+	1800 1550 2050 1550
+Wire Wire Line
+	1800 1900 1800 1950
+Wire Wire Line
+	1800 1950 2350 1950
+Wire Wire Line
+	3100 1950 3100 1900
+Wire Wire Line
+	2650 1550 2700 1550
+Wire Wire Line
+	3100 1550 3100 1600
+Wire Wire Line
+	3100 1550 3100 1500
+Connection ~ 3100 1550
+Wire Wire Line
+	2700 1600 2700 1550
+Connection ~ 2700 1550
+Wire Wire Line
+	2700 1550 3100 1550
+Wire Wire Line
+	2700 1900 2700 1950
+Connection ~ 2700 1950
+Wire Wire Line
+	2700 1950 3100 1950
+Wire Wire Line
+	2350 2000 2350 1950
+Connection ~ 2350 1950
+Wire Wire Line
+	2350 1950 2700 1950
+Wire Wire Line
+	2350 1950 2350 1850
+$EndSCHEMATC
