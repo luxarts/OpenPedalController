@@ -140,8 +140,6 @@ Wire Wire Line
 	1700 5450 1700 5500
 Wire Wire Line
 	900  6150 1400 6150
-Text GLabel 900  6150 0    50   Input ~ 0
-RELAY_3
 Connection ~ 1400 6150
 Wire Wire Line
 	1400 6100 1400 6150
@@ -276,8 +274,6 @@ Wire Wire Line
 	1700 3950 1700 4000
 Wire Wire Line
 	900  4650 1400 4650
-Text GLabel 900  4650 0    50   Input ~ 0
-RELAY_2
 Connection ~ 1400 4650
 Wire Wire Line
 	1400 4600 1400 4650
@@ -442,8 +438,6 @@ Wire Wire Line
 	1700 2450 1700 2500
 Wire Wire Line
 	900  3150 1400 3150
-Text GLabel 900  3150 0    50   Input ~ 0
-RELAY_1
 Connection ~ 1400 3150
 Wire Wire Line
 	1400 3100 1400 3150
@@ -610,8 +604,6 @@ Wire Wire Line
 	1700 950  1700 1000
 Wire Wire Line
 	900  1650 1400 1650
-Text GLabel 900  1650 0    50   Input ~ 0
-RELAY_0
 Connection ~ 1400 1650
 Wire Wire Line
 	1400 1600 1400 1650
@@ -1003,10 +995,6 @@ Wire Wire Line
 	5200 2150 5200 2500
 Wire Wire Line
 	5500 3150 5650 3150
-Text GLabel 4200 3150 0    50   Input ~ 0
-RELAY_5
-Text GLabel 4200 1650 0    50   Input ~ 0
-RELAY_4
 Wire Wire Line
 	2300 2450 2300 1650
 Wire Wire Line
@@ -1029,43 +1017,155 @@ Connection ~ 5000 950
 $Comp
 L power:GND #PWR?
 U 1 1 5E7917CA
-P 600 7550
+P 5300 6500
 AR Path="/5E7917CA" Ref="#PWR?"  Part="1" 
 AR Path="/5E65E563/5E7917CA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 600 7300 50  0001 C CNN
-F 1 "GND" H 605 7377 50  0000 C CNN
-F 2 "" H 600 7550 50  0001 C CNN
-F 3 "" H 600 7550 50  0001 C CNN
-	1    600  7550
+F 0 "#PWR?" H 5300 6250 50  0001 C CNN
+F 1 "GND" H 5305 6327 50  0000 C CNN
+F 2 "" H 5300 6500 50  0001 C CNN
+F 3 "" H 5300 6500 50  0001 C CNN
+	1    5300 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5E7926CB
-P 600 7350
+P 5300 6300
 AR Path="/5E7926CB" Ref="#PWR?"  Part="1" 
 AR Path="/5E65E563/5E7926CB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 600 7200 50  0001 C CNN
-F 1 "+5V" H 615 7523 50  0000 C CNN
-F 2 "" H 600 7350 50  0001 C CNN
-F 3 "" H 600 7350 50  0001 C CNN
-	1    600  7350
+F 0 "#PWR?" H 5300 6150 50  0001 C CNN
+F 1 "+5V" H 5315 6473 50  0000 C CNN
+F 2 "" H 5300 6300 50  0001 C CNN
+F 3 "" H 5300 6300 50  0001 C CNN
+	1    5300 6300
 	1    0    0    -1  
 $EndComp
-Text HLabel 650  7400 2    50   Input ~ 0
+Text HLabel 5350 6350 2    50   Input ~ 0
 VCC
-Text HLabel 650  7500 2    50   Input ~ 0
+Text HLabel 5350 6450 2    50   Input ~ 0
 GND
 Wire Wire Line
-	600  7550 600  7500
+	5300 6500 5300 6450
 Wire Wire Line
-	600  7500 650  7500
+	5300 6450 5350 6450
 Wire Wire Line
-	650  7400 600  7400
+	5350 6350 5300 6350
 Wire Wire Line
-	600  7400 600  7350
+	5300 6350 5300 6300
 Text HLabel 2350 950  2    50   Input ~ 0
 INPUT
 Text HLabel 5650 3150 2    50   Output ~ 0
 OUTPUT
+$Comp
+L Transistor_Array:ULN2003 U?
+U 1 1 5E3383E3
+P 5300 5000
+F 0 "U?" H 5300 5667 50  0000 C CNN
+F 1 "ULN2003" H 5300 5576 50  0000 C CNN
+F 2 "" H 5350 4450 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5400 4800 50  0001 C CNN
+	1    5300 5000
+	1    0    0    -1  
+$EndComp
+Text Label 900  1650 2    50   ~ 0
+RELAY_0
+Text Label 5750 4800 0    50   ~ 0
+RELAY_0
+Wire Wire Line
+	5750 4800 5700 4800
+Text Label 5750 4900 0    50   ~ 0
+RELAY_1
+Text Label 5750 5000 0    50   ~ 0
+RELAY_2
+Text Label 5750 5100 0    50   ~ 0
+RELAY_3
+Text Label 5750 5200 0    50   ~ 0
+RELAY_4
+Text Label 5750 5300 0    50   ~ 0
+RELAY_5
+Wire Wire Line
+	4900 5400 4850 5400
+Wire Wire Line
+	4850 5400 4850 5650
+Wire Wire Line
+	4850 5650 5300 5650
+Wire Wire Line
+	5300 5650 5300 5600
+Wire Wire Line
+	5700 4900 5750 4900
+Wire Wire Line
+	5700 5000 5750 5000
+Wire Wire Line
+	5750 5100 5700 5100
+Wire Wire Line
+	5700 5200 5750 5200
+Wire Wire Line
+	5750 5300 5700 5300
+Text HLabel 4850 4800 0    50   Input ~ 0
+TUNER
+Text HLabel 4850 4900 0    50   Input ~ 0
+PEDAL_0
+Text HLabel 4850 5000 0    50   Input ~ 0
+PEDAL_1
+Text HLabel 4850 5100 0    50   Input ~ 0
+PEDAL_2
+Text HLabel 4850 5200 0    50   Input ~ 0
+PEDAL_3
+Text HLabel 4850 5300 0    50   Input ~ 0
+PEDAL_4
+Wire Wire Line
+	4850 4800 4900 4800
+Wire Wire Line
+	4850 4900 4900 4900
+Wire Wire Line
+	4900 5000 4850 5000
+Wire Wire Line
+	4850 5100 4900 5100
+Wire Wire Line
+	4900 5200 4850 5200
+Wire Wire Line
+	4850 5300 4900 5300
+$Comp
+L power:GND #PWR?
+U 1 1 5E45474D
+P 5300 5700
+AR Path="/5E45474D" Ref="#PWR?"  Part="1" 
+AR Path="/5E65E563/5E45474D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5300 5450 50  0001 C CNN
+F 1 "GND" H 5305 5527 50  0000 C CNN
+F 2 "" H 5300 5700 50  0001 C CNN
+F 3 "" H 5300 5700 50  0001 C CNN
+	1    5300 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 5650
+Wire Wire Line
+	5300 5700 5300 5650
+$Comp
+L power:+5V #PWR?
+U 1 1 5E45E541
+P 5750 4550
+AR Path="/5E45E541" Ref="#PWR?"  Part="1" 
+AR Path="/5E65E563/5E45E541" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5750 4400 50  0001 C CNN
+F 1 "+5V" H 5765 4723 50  0000 C CNN
+F 2 "" H 5750 4550 50  0001 C CNN
+F 3 "" H 5750 4550 50  0001 C CNN
+	1    5750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4550 5750 4600
+Wire Wire Line
+	5750 4600 5700 4600
+Text Label 900  3150 2    50   ~ 0
+RELAY_1
+Text Label 900  4650 2    50   ~ 0
+RELAY_2
+Text Label 900  6150 2    50   ~ 0
+RELAY_3
+Text Label 4200 1650 2    50   ~ 0
+RELAY_4
+Text Label 4200 3150 2    50   ~ 0
+RELAY_5
 $EndSCHEMATC

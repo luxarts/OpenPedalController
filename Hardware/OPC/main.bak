@@ -286,18 +286,16 @@ Wire Wire Line
 Connection ~ 3150 7350
 Text HLabel 3200 7350 2    50   Output ~ 0
 GND
-Text HLabel 9800 3650 2    50   Output ~ 0
-PEDAL_0
 Text HLabel 9800 3500 2    50   Output ~ 0
-PEDAL_1
+PEDAL_0
 Text HLabel 9800 3350 2    50   Output ~ 0
-PEDAL_2
+PEDAL_1
 Text HLabel 9800 3200 2    50   Output ~ 0
-PEDAL_3
+PEDAL_2
 Text HLabel 9800 3050 2    50   Output ~ 0
-PEDAL_4
+PEDAL_3
 Text HLabel 9800 2900 2    50   Output ~ 0
-PEDAL_5
+PEDAL_4
 Wire Wire Line
 	9800 2900 9750 2900
 Wire Wire Line
@@ -310,4 +308,6 @@ Wire Wire Line
 	9750 3500 9800 3500
 Wire Wire Line
 	9750 3650 9800 3650
+Text HLabel 9800 3650 2    50   Output ~ 0
+TUNER
 $EndSCHEMATC
