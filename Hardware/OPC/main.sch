@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -310,4 +310,32 @@ Wire Wire Line
 	9750 3650 9800 3650
 Text HLabel 9800 3650 2    50   Output ~ 0
 TUNER
+Text HLabel 7600 1550 0    50   Output ~ 0
+7SEG_A
+Text HLabel 7600 1700 0    50   Output ~ 0
+7SEG_B
+Text HLabel 7600 1850 0    50   Output ~ 0
+7SEG_C
+Text HLabel 7600 2000 0    50   Output ~ 0
+7SEG_D
+Text HLabel 7600 2300 0    50   Output ~ 0
+7SEG_F
+Text HLabel 7600 2450 0    50   Output ~ 0
+7SEG_G
+Text HLabel 7600 2150 0    50   Output ~ 0
+7SEG_E
+Wire Wire Line
+	7600 1550 7650 1550
+Wire Wire Line
+	7600 1700 7650 1700
+Wire Wire Line
+	7650 1850 7600 1850
+Wire Wire Line
+	7600 2000 7650 2000
+Wire Wire Line
+	7650 2150 7600 2150
+Wire Wire Line
+	7650 2300 7600 2300
+Wire Wire Line
+	7650 2450 7600 2450
 $EndSCHEMATC

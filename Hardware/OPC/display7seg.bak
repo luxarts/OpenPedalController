@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+LIBS:OPC-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Display_Character:HDSP-7801 U?
+U 1 1 5E474023
+P 3050 2300
+F 0 "U?" H 3050 2967 50  0000 C CNN
+F 1 "HDSP-7801" H 3050 2876 50  0000 C CNN
+F 2 "Display_7Segment:HDSP-7801" H 3050 1750 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-2553EN" H 3050 2300 50  0001 C CNN
+	1    3050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E475116
+P 3400 2550
+F 0 "#PWR?" H 3400 2400 50  0001 C CNN
+F 1 "+5V" H 3415 2723 50  0000 C CNN
+F 2 "" H 3400 2550 50  0001 C CNN
+F 3 "" H 3400 2550 50  0001 C CNN
+	1    3400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2600 3400 2600
+Wire Wire Line
+	3400 2600 3400 2550
+Wire Wire Line
+	3350 2700 3400 2700
+Wire Wire Line
+	3400 2700 3400 2600
+Connection ~ 3400 2600
+$Comp
+L Device:R R?
+U 1 1 5E4760F7
+P 2350 1400
+F 0 "R?" V 2143 1400 50  0000 C CNN
+F 1 "R" V 2234 1400 50  0000 C CNN
+F 2 "" V 2280 1400 50  0001 C CNN
+F 3 "~" H 2350 1400 50  0001 C CNN
+	1    2350 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E4766EE
+P 2350 1700
+F 0 "R?" V 2143 1700 50  0000 C CNN
+F 1 "R" V 2234 1700 50  0000 C CNN
+F 2 "" V 2280 1700 50  0001 C CNN
+F 3 "~" H 2350 1700 50  0001 C CNN
+	1    2350 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E4778C5
+P 2350 2000
+F 0 "R?" V 2143 2000 50  0000 C CNN
+F 1 "R" V 2234 2000 50  0000 C CNN
+F 2 "" V 2280 2000 50  0001 C CNN
+F 3 "~" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E477BDE
+P 2350 2300
+F 0 "R?" V 2143 2300 50  0000 C CNN
+F 1 "R" V 2234 2300 50  0000 C CNN
+F 2 "" V 2280 2300 50  0001 C CNN
+F 3 "~" H 2350 2300 50  0001 C CNN
+	1    2350 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E47846D
+P 2350 2600
+F 0 "R?" V 2143 2600 50  0000 C CNN
+F 1 "R" V 2234 2600 50  0000 C CNN
+F 2 "" V 2280 2600 50  0001 C CNN
+F 3 "~" H 2350 2600 50  0001 C CNN
+	1    2350 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E478820
+P 2350 2900
+F 0 "R?" V 2143 2900 50  0000 C CNN
+F 1 "R" V 2234 2900 50  0000 C CNN
+F 2 "" V 2280 2900 50  0001 C CNN
+F 3 "~" H 2350 2900 50  0001 C CNN
+	1    2350 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E478AD2
+P 2350 3200
+F 0 "R?" V 2143 3200 50  0000 C CNN
+F 1 "R" V 2234 3200 50  0000 C CNN
+F 2 "" V 2280 3200 50  0001 C CNN
+F 3 "~" H 2350 3200 50  0001 C CNN
+	1    2350 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 2700 2700 2700
+Wire Wire Line
+	2700 2700 2700 2850
+Wire Wire Line
+	2700 2850 3400 2850
+Wire Wire Line
+	3400 2850 3400 2700
+Connection ~ 3400 2700
+Wire Wire Line
+	2500 2300 2750 2300
+Wire Wire Line
+	2500 2600 2550 2600
+Wire Wire Line
+	2550 2600 2550 2400
+Wire Wire Line
+	2550 2400 2750 2400
+Wire Wire Line
+	2750 2500 2600 2500
+Wire Wire Line
+	2600 2500 2600 2900
+Wire Wire Line
+	2600 2900 2500 2900
+Wire Wire Line
+	2750 2600 2650 2600
+Wire Wire Line
+	2650 2600 2650 3200
+Wire Wire Line
+	2650 3200 2500 3200
+Wire Wire Line
+	2500 2000 2550 2000
+Wire Wire Line
+	2550 2000 2550 2200
+Wire Wire Line
+	2550 2200 2750 2200
+Wire Wire Line
+	2500 1700 2600 1700
+Wire Wire Line
+	2600 1700 2600 2100
+Wire Wire Line
+	2600 2100 2750 2100
+Wire Wire Line
+	2500 1400 2650 1400
+Wire Wire Line
+	2650 1400 2650 2000
+Wire Wire Line
+	2650 2000 2750 2000
+Text HLabel 2150 1400 0    50   Input ~ 0
+7SEG_A
+Text HLabel 2150 1700 0    50   Input ~ 0
+7SEG_B
+Text HLabel 2150 2000 0    50   Input ~ 0
+7SEG_C
+Text HLabel 2150 2300 0    50   Input ~ 0
+7SEG_D
+Text HLabel 2150 2600 0    50   Input ~ 0
+7SEG_E
+Text HLabel 2150 2900 0    50   Input ~ 0
+7SEG_F
+Text HLabel 2150 3200 0    50   Input ~ 0
+7SEG_G
+Wire Wire Line
+	2150 3200 2200 3200
+Wire Wire Line
+	2200 2900 2150 2900
+Wire Wire Line
+	2150 2600 2200 2600
+Wire Wire Line
+	2200 2300 2150 2300
+Wire Wire Line
+	2150 2000 2200 2000
+Wire Wire Line
+	2150 1700 2200 1700
+Wire Wire Line
+	2150 1400 2200 1400
+Text HLabel 3450 2600 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	3450 2600 3400 2600
+$EndSCHEMATC
